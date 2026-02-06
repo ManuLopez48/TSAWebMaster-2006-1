@@ -1,0 +1,23 @@
+.button {
+    --set-height: 100%;
+    --set-width: 100%;
+    display: block;
+    height: var(--set-height);
+    width: var(--set-width);
+
+}
+
+.button-shadow {
+
+}
+
+.button-side {
+
+}
+
+.button-top {
+    --prefered-color: #ffffff;
+    background-color: var(--prefered-color);
+
+    
+}

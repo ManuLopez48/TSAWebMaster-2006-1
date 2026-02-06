@@ -47,3 +47,17 @@ body {
     color: white;
     margin: 0px;
 }
+
+.homepage-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-search-section {
+    display:flex;
+    justify-content: center;
+    align-content: center;
+
+    min-height: 20vh;
+    background-color: #ffd497;
+}
