@@ -1,23 +1,66 @@
 .button {
-    --set-height: 100%;
-    --set-width: 100%;
-    display: block;
+    background-color: #ffffff00;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    position: relative;
+
+    --set-height: 40px;
+    --set-width: 150px;
+
     height: var(--set-height);
     width: var(--set-width);
+}
 
+.button-shadow, .button-side, .button-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
 }
 
 .button-shadow {
-
+    background-color: #0000007a;
+    transform: translateY(3px);
+    transition: transform 100ms cubic-bezier(0,0.54,0.64,1.4);
 }
 
 .button-side {
-
+    --prefered-color: #777777;
+    background-color: var(--prefered-color);
 }
 
 .button-top {
     --prefered-color: #ffffff;
-    background-color: var(--prefered-color);
+    --text-color: #000000;
 
-    
+    background-color: var(--prefered-color);
+    color: var(--text-color);
+
+    align-content: center;
+    justify-content: center;
+
+    will-change: transform;
+
+    transform: translateY(-3px);
+    transition: transform 100ms cubic-bezier(0,0.54,0.64,1.4);
+}
+
+.button:active .button-shadow {
+    transform: translateY(2px);
+    transition: transform 50ms cubic-bezier(0,0.54,0.64,1.4);
+}
+
+.button:active .button-top {
+    transform: translateY(-2px);
+    transition: transform 50ms cubic-bezier(0,0.54,0.64,1.4);
+}
+
+.button:hover .button-top {
+    filter: brightness(110%);
 }
