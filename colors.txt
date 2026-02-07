@@ -1,3 +1,4 @@
+Trying to use Pastel Colors
 #8e7cc3
 #ffd497
 #fb918f
