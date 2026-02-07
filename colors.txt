@@ -2,3 +2,8 @@ Trying to use Pastel Colors
 #8e7cc3
 #ffd497
 #fb918f
+
+Card Backgrounds
+#bdd0c4
+#9ab7d3
+#dfccf1

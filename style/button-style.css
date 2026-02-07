@@ -2,6 +2,7 @@
     --prefered-color-top: #ffffff;
     --prefered-color-side: #777777;
     --text-color: #000000;
+    --text-size: 16px;
 
     background-color: #ffffff00;
     border: 0;
@@ -41,6 +42,7 @@
 .button-top {
     background-color: var(--prefered-color-top);
     color: var(--text-color);
+    font-size: var(--text-size);
 
     align-content: center;
     justify-content: center;
@@ -71,4 +73,11 @@
     --prefered-color-side: #473E61;
     --prefered-color-top: #8e7cc3;
     --text-color: white;
+}
+
+.card-button {
+    --set-height: 50px;
+    --set-width: 90%;
+    --prefered-color-side: #945352;
+    --prefered-color-top: #fb918f;
 }

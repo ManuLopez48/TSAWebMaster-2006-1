@@ -68,3 +68,102 @@ body {
     min-height: 150px;
     background-color: #ffd497;
 }
+
+.top-3-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-3-header {
+    text-align: center;
+}
+
+/*Post Cards*/
+.cards-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    height: auto;
+    width: 100%;
+
+    gap: 1em;
+    margin: 0 0 1em 0;
+    
+}
+
+.info-card {
+    --back-color: #bdd0c4;
+    --set-height: 500px;
+    --set-width: 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: var(--set-height);
+    min-width: var(--set-width);
+    padding: 0;
+    margin: 0;
+    border-radius: 12px;
+
+    background-color: var(--back-color);
+    overflow: hidden;
+}
+
+.card-image {
+    height: 50%;
+    width: 100%;
+    background-image: url("/images/website/franklin_mountain_loading_icon.jpg");
+    background-size: cover;
+}
+
+.card-title {
+    height: auto;
+    width: 98%;
+    margin: 5px 0 5px 0;
+}
+
+.card-summary {
+    margin: 0 5px 0 5px;
+    padding: 0;
+    height: 20%;
+    width: var(--set-width);
+    overflow-y: hidden;
+    
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 10px;
+    height: 5%;
+    width: 98%;
+}
+
+.card-rating {
+    --percent: 100%; /*Percent to increase or decrease rating*/
+    height: 100%;
+    width:100px;
+    background-image: linear-gradient(
+        90deg,
+        yellow var(--percent),
+        rgb(0,0,0,0) var(--percent)
+    );
+
+    mask-image: url("/images/website/icons/star-mask.png");
+    mask-size: 20px 20px;
+    mask-repeat: repeat-x;
+}
+
+.card-date {
+    flex: 1;
+    margin: 0;
+    padding: 0 5px 0 0;
+    height: 100%;
+    text-align: right;
+    color: black;
+}
