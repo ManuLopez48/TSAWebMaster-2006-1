@@ -24,15 +24,44 @@
         <section class="submission-form">
 
             <h2>Request Addition</h2>
-            <div id="form-name-holder">
-                <p>Name of Addition:</p>
-                <input id="addition-name" type="text">
+            <h3>Addition Information</h3>
+            <p>Name of Addition:</p>
+            <input id="form-addition-name" type="text">
+            <p>Organization Name</p>
+            <input id="form-organization-name" type="text">
+            <h3>Contact</h3>
+            <p>Email:</p>
+            <input id="form-organization-contact-email" type="text">
+            <p>Phone:</p>
+            <input id="form-organization-contact-phone" type="text">
+
+            <h3>Addition Summary</h3>
+            <p>Summary:</p>
+            <textarea id="form-summary"></textarea>
+            <p>Short Summary</p>
+            <textarea id="form-short-summary"></textarea>
+
+            <h3>Information</h3>
+            <p>Ranged Date:</p>
+            <input type="checkbox" id="form-event-date-toggle">
+            <div id="form-single-date">
+                <p>Event Date</p>
+                <input id="form-event-date" type="date">
             </div>
-            <div id="form-summary-holder">
-                <p>Summary:</p>
-                <textarea id="form-summary"></textarea>
+            <div id="form-multi-date">
+                <p>Event Date From:</p>
+                <input id="form-event-date-from" type="date">
+                <p>Event Date To:</p>
+                <input id="form-event-date-to" type="date">
             </div>
-            
+            <button class="button">
+                <span class="button-shadow"></span>
+                <span class="button-side"></span>
+                <span class="button-top">
+                    Submit
+                </span>
+            </button>
+
         </section>
     </main>
 
