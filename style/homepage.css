@@ -3,9 +3,6 @@ body {
     margin: 0;
 }
 
-.common-header {
-}
-
 .common-top-bar {
     display: flex;
     flex-direction: row;
