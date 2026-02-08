@@ -81,3 +81,11 @@
     --prefered-color-side: #945352;
     --prefered-color-top: #fb918f;
 }
+
+/*Find Page*/
+
+.search-box-add-field-button {
+    --set-height: 30px;
+    --set-width: 30px;
+    margin: 0 0 7px 0;
+}
