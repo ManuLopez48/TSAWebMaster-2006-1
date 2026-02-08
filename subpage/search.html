@@ -6,7 +6,7 @@
     
     <title>The El Paso Center</title>
     <link rel="icon" type="image/x-icon" href="/images/website/icons/ElPasoCommunityProjectIconWhite.png">
-    <link rel="stylesheet" href="/style/homepage.css">
+    <link rel="stylesheet" href="/style/styles.css">
     <link rel="stylesheet" href="/style/button-style.css">
 </head>
 <body>
@@ -23,14 +23,26 @@
         <section class="search-filter-section">
             <div class="search-box">
                 <h2 class="search-box-header">Enter Keywords</h2>
-                <input class="search-box-input-field" type="text" name="keyword-field">
-                <button class="button search-box-add-field-button">
-                    <span class="button-shadow"></span>
-                    <span class="button-side"></span>
-                    <span class="button-top">
-                        +
-                    </span>
-                </button>
+                <div class="search-box-input-fields-holder">
+                    <input class="search-box-input-field" type="text" name="keyword-field">
+                </div>
+                <div class="search-box-add-remove-buttons">
+                    <button id="search-box-add" class="button search-box-add-remove-field-button">
+                        <span class="button-shadow"></span>
+                        <span class="button-side"></span>
+                        <span class="button-top">
+                            +
+                        </span>
+                    </button>
+                    <button id="search-box-remove" class="button search-box-add-remove-field-button">
+                        <span class="button-shadow"></span>
+                        <span class="button-side"></span>
+                        <span class="button-top">
+                            -
+                        </span>
+                    </button>
+                </div>
+                
                 <button class="button">
                     <span class="button-shadow"></span>
                     <span class="button-side"></span>
@@ -47,5 +59,7 @@
         <a class="footer-link" href="/subpage/submit.html">Request Addition</a>
         <a class="footer-link" href="/subpage/report.html">Report Listing</a>
     </footer>
+
+    <script src="/scripts/finder.js"></script>
 </body>
 </html>
