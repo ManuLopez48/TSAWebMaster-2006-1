@@ -3,6 +3,7 @@
     --prefered-color-side: #777777;
     --text-color: #000000;
     --text-size: 16px;
+    --text-boldness: normal;
 
     background-color: #ffffff00;
     border: 0;
@@ -43,6 +44,7 @@
     background-color: var(--prefered-color-top);
     color: var(--text-color);
     font-size: var(--text-size);
+    font-weight: var(--text-boldness);
 
     align-content: center;
     justify-content: center;
@@ -70,9 +72,9 @@
 .website-highlight-button{
     --set-height: 50px;
     --set-width: 50%;
-    --prefered-color-side: #473E61;
-    --prefered-color-top: #8e7cc3;
-    --text-color: white;
+    --prefered-color-side: #945352;
+    --prefered-color-top: #fb918f;
+    --text-color: black;
 }
 
 .card-button {
@@ -88,4 +90,18 @@
     --set-height: 30px;
     --set-width: 30px;
     margin: 0 0 7px 0;
+}
+
+/*Form Submission Button*/
+.submit-form-button {
+    --set-width: 50%;
+    --prefered-color-side: #5d6f80;
+    --prefered-color-top: #9ab7d3;
+    --text-color: black;
+
+    grid-column-start: 2;
+    grid-row-start: 17;
+
+    margin-top: 10px;
+    justify-self: end;
 }

@@ -22,39 +22,52 @@
 
     <main class="request-main">
         <section class="submission-form">
+            <h2 id="form-header">Request Addition</h2>
+            <p class="form-behaviour-info-element"><span class="form-required">*</span> - required</p>
 
-            <h2>Request Addition</h2>
-            <h3>Addition Information</h3>
-            <p>Name of Addition:</p>
+            <h3 id="form-addition-info-contact-header">Addition Info & Contact</h3>
+            <label id="form-addition-name-header">Name of Addition: <span class="form-required">*</span></label>
             <input id="form-addition-name" type="text">
-            <p>Organization Name</p>
+            <label id="form-addition-organization-name-header">Organization Name:</label>
             <input id="form-organization-name" type="text">
-            <h3>Contact</h3>
-            <p>Email:</p>
+            <label>Email:</label>
             <input id="form-organization-contact-email" type="text">
-            <p>Phone:</p>
+            <label>Phone: <span class="form-required">*</span></label>
             <input id="form-organization-contact-phone" type="text">
 
-            <h3>Addition Summary</h3>
-            <p>Summary:</p>
-            <textarea id="form-summary"></textarea>
-            <p>Short Summary</p>
-            <textarea id="form-short-summary"></textarea>
+            <h3 id="form-image-section-header">Addition Image</h3>
+            <label>Organization Logo: <span class="form-required">*</span></label>
+            <button id="insert-card-image-button">Add Image</button>
+            
+            <label><span id="form-field-question">?</span>Event Image:</label>
+            
+            <button id="insert-card-image-button">Add Image</button>
 
-            <h3>Information</h3>
-            <p>Ranged Date:</p>
-            <input type="checkbox" id="form-event-date-toggle">
+            <h3 id="form-summaries-header">Addition Summary</h3>
+            <label>Summary: <span class="form-required">*</span></label>
+            <textarea id="form-summary" name="submit-summary"></textarea>
+
+            <label>Short Summary <span class="form-required">*</span></label>
+            <textarea id="form-short-summary" name="submit-short-summary" maxlength="200"></textarea>
+
+            <h3 id="form-date-header">Date</h3>
+            <div id="form-ranged-date-toggle-holder">
+                <label>Ranged Date:</label>
+                <input type="checkbox" id="form-event-date-toggle">
+            </div>
             <div id="form-single-date">
-                <p>Event Date</p>
+                <label>Event Date:</label>
                 <input id="form-event-date" type="date">
             </div>
             <div id="form-multi-date">
-                <p>Event Date From:</p>
+                <label>Event Date From:</label>
                 <input id="form-event-date-from" type="date">
-                <p>Event Date To:</p>
+                <label>Event Date To:</label>
                 <input id="form-event-date-to" type="date">
             </div>
-            <button class="button">
+
+
+            <button class="button submit-form-button">
                 <span class="button-shadow"></span>
                 <span class="button-side"></span>
                 <span class="button-top">
@@ -71,5 +84,6 @@
         <a class="footer-link" href="/subpage/submit.html">Request Addition</a>
         <a class="footer-link" href="/subpage/report.html">Report Listing</a>
     </footer>
+    <script src="/scripts/form_submission.js"></script>
 </body>
 </html>

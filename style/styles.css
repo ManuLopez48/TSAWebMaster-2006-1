@@ -270,3 +270,99 @@ body {
 .search-box-input-field {
     margin: 10px 0 10px 0;
 }
+
+/*Form Submission for submit.html*/
+.form-behaviour-info {
+    margin: 0;
+    padding: 0;
+}
+
+.form-required {
+    color: red;
+}
+
+.field-info {
+    background-color: grey;
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    border-radius: 22px;
+    text-align: center;
+    color: white;
+}
+
+.submission-form {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 30% 70%;
+
+
+    margin: 30px;
+    padding: 10px;
+    border-radius: 9px;
+    background-color: #d8d8d8;
+}
+
+#form-header {
+    grid-column: 1 / span 2;
+    grid-row-start: 1;
+}
+.form-behaviour-info-element {
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / span 2;
+    grid-row-start: 2;
+}
+
+/*Addition Info & Contact*/
+#form-addition-info-contact-header {
+    grid-column: 1 / span 2;
+    grid-row-start: 3;
+}
+
+
+/*Addition Image*/
+#form-image-section-header {
+    grid-column: 1 / span 2;
+    grid-row-start: 8;
+}
+
+#form-field-question {
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border-radius: 11px;
+    text-align: center;
+
+    background-color: lightgray;
+    color:black;
+    margin: 0 7px 0 0;
+}
+
+/*Addition Summary*/
+#form-summaries-header {
+    grid-column: 1 / span 2;
+    grid-row-start: 11;
+}
+
+/*Date Section*/
+#form-date-header {
+    grid-column: 1 / span 2;
+    grid-row-start: 14;
+}
+
+#form-ranged-date-toggle-holder {
+    grid-column: 1 / span 2;
+    grid-row-start: 15;
+}
+
+#form-single-date {
+    grid-column: 1 / span 2;
+    grid-row-start: 16;
+}
+
+#form-multi-date {
+    grid-column: 1 / span 2;
+    grid-row-start: 16;
+}
