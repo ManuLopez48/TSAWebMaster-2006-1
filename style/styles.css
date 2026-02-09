@@ -306,26 +306,22 @@ body {
 
 #form-header {
     grid-column: 1 / span 2;
-    grid-row-start: 1;
 }
 .form-behaviour-info-element {
     margin: 0;
     padding: 0;
     grid-column: 1 / span 2;
-    grid-row-start: 2;
 }
 
 /*Addition Info & Contact*/
 #form-addition-info-contact-header {
     grid-column: 1 / span 2;
-    grid-row-start: 3;
 }
 
 
 /*Addition Image*/
 #form-image-section-header {
     grid-column: 1 / span 2;
-    grid-row-start: 8;
 }
 
 #form-field-question {
@@ -343,26 +339,21 @@ body {
 /*Addition Summary*/
 #form-summaries-header {
     grid-column: 1 / span 2;
-    grid-row-start: 11;
 }
 
 /*Date Section*/
 #form-date-header {
     grid-column: 1 / span 2;
-    grid-row-start: 14;
 }
 
 #form-ranged-date-toggle-holder {
     grid-column: 1 / span 2;
-    grid-row-start: 15;
 }
 
 #form-single-date {
     grid-column: 1 / span 2;
-    grid-row-start: 16;
 }
 
 #form-multi-date {
     grid-column: 1 / span 2;
-    grid-row-start: 16;
 }
