@@ -71,7 +71,6 @@ body {
 .top-bar-nav-button:hover {
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
-    border-radius: 4px;
 
     text-decoration: underline;
 }
