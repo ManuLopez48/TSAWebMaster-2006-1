@@ -36,3 +36,12 @@ function checkDateSetup() {
     }
 }
 
+submitButton.addEventListener('click', () => {
+    if(confirm("Are you sure you want to submit?")) {
+        alert("Entry Submitted");
+        window.location.href = "/subpage/submit.html";
+
+        // Generate HTML Page Here
+    }
+});
+
