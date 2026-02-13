@@ -48,8 +48,12 @@ class CommonHeader extends HTMLElement {
 
         this.appendChild(commonHeader);
 
-        
+        commonHeaderLogo.addEventListener('click', returnHome);
     }
+}
+
+function returnHome() {
+        window.location.href = '/homepage.html';
 }
 
 class CommonFooter extends HTMLElement {
