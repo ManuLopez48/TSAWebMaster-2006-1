@@ -6,6 +6,7 @@ const contactPhone = document.getElementById('form-organization-contact-phone');
 
 // Image Elements
 
+
 //Summary Elements
 const mainSummary = document.getElementById('form-summary');
 const shortSummary = document.getElementById('form-short-summary');

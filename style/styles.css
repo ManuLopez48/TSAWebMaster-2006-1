@@ -320,6 +320,36 @@ body {
 
 
 /*Addition Image*/
+input[type="file"] {
+    display: none;
+    position: absolute;
+    z-index: -1;
+}
+
+#form-add-image-input-organization {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+    font-size: 9px;
+    height: auto;
+}
+
+.form-file-upload-btn {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 5px 0 5px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 3px;
+    font-size: 12px;
+    height: auto;
+
+    text-align: center;
+    background-color: white;
+}
+
 #form-image-section-header {
     grid-column: 1 / span 2;
 }
