@@ -5,7 +5,8 @@ const contactEmail = document.getElementById('form-organization-contact-email');
 const contactPhone = document.getElementById('form-organization-contact-phone');
 
 // Image Elements
-
+const organizationLogo = document.getElementById('form-add-image-input-organization');
+const eventImg = document.getElementById('form-add-image-additional-input');
 
 //Summary Elements
 const mainSummary = document.getElementById('form-summary');
@@ -46,3 +47,36 @@ submitButton.addEventListener('click', () => {
     }
 });
 
+organizationLogo.addEventListener('change', (event) => {
+    const submitted = event.target;
+
+    if(submitted.files && submitted.files[0]) {
+        const organizationIMGUploaded = document.getElementById('og-img-uploaded');
+        const url = URL.createObjectURL(submitted.files[0]);
+
+        organizationIMGUploaded.src = url;
+        organizationIMGUploaded.style.display = 'block';
+        organizationIMGUploaded.style.width = '100px';
+        organizationIMGUploaded.style.height = '100px';
+
+        organizationIMGUploaded.onload = () => URL.revokeObjectURL(url);
+    }
+    console.log('Organization Submit Working');
+});
+
+eventImg.addEventListener('change', (event) => {
+    const submitted = event.target;
+
+    if(submitted.files && submitted.files[0]) {
+        const organizationIMGUploaded = document.getElementById('og-img-uploaded');
+        const url = URL.createObjectURL(submitted.files[0]);
+
+        organizationIMGUploaded.src = url;
+        organizationIMGUploaded.style.display = 'block';
+        organizationIMGUploaded.style.width = '100px';
+        organizationIMGUploaded.style.height = '100px';
+
+        organizationIMGUploaded.onload = () => URL.revokeObjectURL(url);
+    }
+    console.log('Img Submit Working');
+});
