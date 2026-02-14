@@ -5,8 +5,17 @@ const contactEmail = document.getElementById('form-organization-contact-email');
 const contactPhone = document.getElementById('form-organization-contact-phone');
 
 // Image Elements
-const organizationLogo = document.getElementById('form-add-image-input-organization');
-const eventImg = document.getElementById('form-add-image-additional-input');
+const addOrganizationLogo = document.getElementById('form-add-image-input-organization');
+const addAdditionalImg = document.getElementById('form-add-image-additional-input');
+
+const checkOrgImg = document.getElementById('form-view-organization-img-btn');
+const checkAdditionalImg = document.getElementById('form-view-additional-img-btn');
+
+const removeOrgImg = document.getElementById('form-remove-organization-img-btn');
+const removeAddiImg = document.getElementById('form-remove-additional-img-btn');
+
+// Image View - Modal
+const closeModal = document.getElementById('close-img-modal')
 
 //Summary Elements
 const mainSummary = document.getElementById('form-summary');
@@ -47,36 +56,75 @@ submitButton.addEventListener('click', () => {
     }
 });
 
-organizationLogo.addEventListener('change', (event) => {
+addOrganizationLogo.addEventListener('change', (event) => {
     const submitted = event.target;
 
     if(submitted.files && submitted.files[0]) {
-        const organizationIMGUploaded = document.getElementById('og-img-uploaded');
+        const imgOrg = document.getElementById('uploaded-image-displayed-org');
         const url = URL.createObjectURL(submitted.files[0]);
+        console.log(imgOrg);
 
-        organizationIMGUploaded.src = url;
-        organizationIMGUploaded.style.display = 'block';
-        organizationIMGUploaded.style.width = '100px';
-        organizationIMGUploaded.style.height = '100px';
+        imgOrg.src = url;
 
-        organizationIMGUploaded.onload = () => URL.revokeObjectURL(url);
+
+        imgOrg.onload = () => URL.revokeObjectURL(url);
     }
     console.log('Organization Submit Working');
 });
 
-eventImg.addEventListener('change', (event) => {
+addAdditionalImg.addEventListener('change', (event) => {
     const submitted = event.target;
 
+    console.log("registering");
     if(submitted.files && submitted.files[0]) {
-        const organizationIMGUploaded = document.getElementById('og-img-uploaded');
+        const imgAddi = document.getElementById('uploaded-image-displayed-addi');
         const url = URL.createObjectURL(submitted.files[0]);
 
-        organizationIMGUploaded.src = url;
-        organizationIMGUploaded.style.display = 'block';
-        organizationIMGUploaded.style.width = '100px';
-        organizationIMGUploaded.style.height = '100px';
+        imgAddi.src = url;
 
-        organizationIMGUploaded.onload = () => URL.revokeObjectURL(url);
+        imgAddi.onload = () => URL.revokeObjectURL(url);
     }
     console.log('Img Submit Working');
+});
+ 
+checkOrgImg.addEventListener('click', () => {
+    const modal = document.getElementById('image-uploaded-modal');
+    const imgOrg = document.getElementById('uploaded-image-displayed-org');
+    const imgAddi = document.getElementById('uploaded-image-displayed-addi');
+    imgOrg.hidden = false;
+    imgAddi.hidden = true;
+    modal.classList.add("open");
+});
+
+checkAdditionalImg.addEventListener('click', () => {
+    const modal = document.getElementById('image-uploaded-modal');
+    const imgOrg = document.getElementById('uploaded-image-displayed-org');
+    const imgAddi = document.getElementById('uploaded-image-displayed-addi');
+    imgOrg.hidden = true;
+    imgAddi.hidden = false;
+    modal.classList.add("open");
+});
+
+closeModal.addEventListener('click', () => {
+    const modal = document.getElementById('image-uploaded-modal');
+    const imgOrg = document.getElementById('uploaded-image-displayed-org');
+    const imgAddi = document.getElementById('uploaded-image-displayed-addi');
+    imgOrg.hidden = true;
+    imgAddi.hidden = true;
+
+    modal.classList.remove("open");
+});
+
+removeOrgImg.addEventListener('click', () => {
+    const imgOrg = document.getElementById('uploaded-image-displayed-org');
+    imgOrg.src = "";
+    addOrganizationLogo.value = "";
+    console.log('works');
+});
+
+removeAddiImg.addEventListener('click', () => {
+    const imgAddi = document.getElementById('uploaded-image-displayed-addi');
+    imgAddi.src = "";
+    checkAdditionalImg.value = "";
+    console.log('works');
 });

@@ -11,13 +11,19 @@
 </head>
 <body>
     <common-header></common-header>
-    
+    <div id="image-uploaded-modal">
+        <img id="uploaded-image-displayed-org" src="">
+        <img id="uploaded-image-displayed-addi" src="">
+        <button id="close-img-modal">Close</button>
+    </div>
     <main class="page-main">
         
         <section class="submission-form">
+            <!--Form Info-->
             <h2 id="form-header">Request Addition</h2>
             <p class="form-behaviour-info-element"><span class="form-required">*</span> - required</p>
 
+            <!--Contact-->
             <h3 id="form-addition-info-contact-header">Addition Info & Contact</h3>
             <label id="form-addition-name-header">Name of Addition: <span class="form-required">*</span></label>
             <input id="form-addition-name" type="text">
@@ -28,20 +34,31 @@
             <label>Phone: <span class="form-required">*</span></label>
             <input id="form-organization-contact-phone" type="text">
 
+            <!--Image Addition-->
+                <!--Organization-->
             <h3 id="form-image-section-header">Addition Image</h3>
             <label>Organization Logo: <span class="form-required">*</span></label>
-            <label for="form-add-image-input-organization" class="form-file-upload-btn">
+            <div class="form-org-upl-holder">
+                <label for="form-add-image-input-organization" class="form-file-upload-btn">
                 Upload Image
-            </label>
-            <input type="file" id="form-add-image-input-organization">
-            <!--<button id="insert-card-image-button">Add Image</button>-->
+                </label>
+                <input type="file" id="form-add-image-input-organization">
+                <button id="form-view-organization-img-btn" class="form-view-img-btn">View Image</button>
+                <button id="form-remove-organization-img-btn" class="form-remove-img-btn">Remove Image</button>
+            </div>
             
+                <!--Additional-->
             <label><span id="form-field-question">?</span>Additional Image:</label>
-            <label for="form-add-image-additional-input" class="form-file-upload-btn">
+            <div class="form-addi-upl-holder">
+                <label for="form-add-image-additional-input" class="form-file-upload-btn">
                 Upload Image
-            </label>
-            <input type="file" id="form-add-image-additional-input">
+                </label>
+                <input type="file" id="form-add-image-additional-input">
+                <button id="form-view-additional-img-btn" class="form-view-img-btn">View Image</button>
+                <button id="form-remove-additional-img-btn" class="form-remove-img-btn">Remove Image</button>
+            </div>
 
+            <!--Summaries-->
             <h3 id="form-summaries-header">Addition Summary</h3>
             <label>Summary: <span class="form-required">*</span></label>
             <textarea id="form-summary" name="submit-summary"></textarea>
@@ -49,6 +66,7 @@
             <label>Short Summary <span class="form-required">*</span></label>
             <textarea id="form-short-summary" name="submit-short-summary" maxlength="200"></textarea>
 
+            <!--Date-->
             <h3 id="form-date-header">Date</h3>
             <div id="form-ranged-date-toggle-holder">
                 <label>Ranged Date:</label>
@@ -65,7 +83,7 @@
                 <input id="form-event-date-to" type="date">
             </div>
 
-
+            <!--Submission-->
             <button id="submit-button" class="button submit-form-button">
                 <span class="button-shadow"></span>
                 <span class="button-side"></span>

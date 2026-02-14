@@ -326,18 +326,63 @@ input[type="file"] {
     z-index: -1;
 }
 
+#uploaded-image-displayed-addi {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+#uploaded-image-displayed-org {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+}
+
+#image-uploaded-modal {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#image-uploaded-modal.open {
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    z-index: 999;
+}
+
+#close-img-modal {
+
+}
+
+.form-image-section-header .form-addi-upl-holder {
+    display: flex;
+    flex-direction: row;
+}
+
 #form-add-image-input-organization {
     display: inline-block;
     cursor: pointer;
-    margin: 0 5px 0 5px;
+    margin: 0px;
     font-size: 9px;
     height: auto;
+    width: 0;
 }
 
 .form-file-upload-btn {
     display: inline-block;
     cursor: pointer;
-    margin: 0 5px 0 5px;
+    margin: 0px;
 
     border-width: 1px;
     border-style: solid;
@@ -345,9 +390,20 @@ input[type="file"] {
     border-radius: 3px;
     font-size: 12px;
     height: auto;
+    width: 50%;
 
     text-align: center;
     background-color: white;
+}
+
+.form-view-img-btn {
+    height: auto;
+    width: 20%;
+}
+
+.form-remove-img-btn {
+    height: auto;
+    width: 25%
 }
 
 #form-image-section-header {
