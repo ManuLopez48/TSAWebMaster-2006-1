@@ -48,11 +48,15 @@ function checkDateSetup() {
 }
 
 submitButton.addEventListener('click', () => {
-    if(confirm("Are you sure you want to submit?")) {
-        alert("Entry Submitted");
-        window.location.href = "/subpage/submit.html";
+    console.log(submissionName.value.trim());
 
-        // Generate HTML Page Here
+    if(submissionName.value.trim() === "" && contactPhone.value.trim() === "" && mainSummary.value.trim() === "" && shortSummary.value.trim() === "") {
+        alert("Missing Required Sections");
+    } else {
+        if(confirm("Are you sure you want to submit?")) {
+            alert("Entry Submitted");
+            window.location.href = "/subpage/submit.html";
+        }
     }
 });
 
