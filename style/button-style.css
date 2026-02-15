@@ -27,7 +27,7 @@
 
     width: 100%;
     height: 100%;
-    border-radius: 12px;
+    border-radius: 5px;
 }
 
 .button-shadow {
@@ -85,7 +85,6 @@
 }
 
 /*Find Page*/
-
 .search-box-add-remove-field-button {
     --set-height: 30px;
     --set-width: 30px;
@@ -104,4 +103,13 @@
 
     margin-top: 10px;
     justify-self: end;
+}
+
+.submission-link-button {
+    --set-width: 100%;
+    --prefered-color-side: #635788;
+    --prefered-color-top: #8e7cc3;
+    --text-color: white;
+    --text-size: 20px;
+    --text-boldness: normal;
 }
