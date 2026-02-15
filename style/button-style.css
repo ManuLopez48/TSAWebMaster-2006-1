@@ -110,6 +110,7 @@
     --prefered-color-side: #635788;
     --prefered-color-top: #8e7cc3;
     --text-color: white;
-    --text-size: 20px;
+    --text-size: 1.7em;
     --text-boldness: normal;
+    margin-top: 20px;
 }
