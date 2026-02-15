@@ -482,6 +482,7 @@ input[type="file"] {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    overflow: hidden;
     flex: 1;
 }
 
