@@ -1,22 +1,28 @@
 const addKeywordInputField = document.getElementById('search-box-add');
-const removeKeywordInputField = document.getElementById('search-box-remove')
 const searchBoxInputFields = document.getElementsByClassName('search-box-input-fields-holder');
+
 
 addKeywordInputField.addEventListener('click', () => {
     console.log('Adding Keyword Field');
+    const layout = document.createElement('div');
     const field = document.createElement('input');
+    const removeBtn = document.createElement('button');
+
+    layout.className = "search-box-input-field-layout";
 
     field.className = "search-box-input-field";
     field.type = "text";
     field.name="keyword-field";
 
-    searchBoxInputFields[0].insertAdjacentElement('beforeend', field);
-});
+    removeBtn.className = "search-box-remove"
+    removeBtn.textContent = "-"
 
-removeKeywordInputField.addEventListener('click', () => {
-    const fields = document.getElementsByClassName('search-box-input-field');
-    if(fields.length > 1) {
-        console.log('Removing Keyword Field');
-        fields[fields.length - 1].remove();
-    }
+    layout.append(field);
+    layout.append(removeBtn);
+
+    searchBoxInputFields[0].insertAdjacentElement('beforeend', layout);
+
+    removeBtn.addEventListener('click', () => {
+        layout.remove();
+    });
 });
