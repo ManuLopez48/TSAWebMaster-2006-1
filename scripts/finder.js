@@ -1,6 +1,6 @@
 const addKeywordInputField = document.getElementById('search-box-add');
 const searchBoxInputFields = document.getElementsByClassName('search-box-input-fields-holder');
-
+const findButton = document.getElementById('search-box-btn');
 
 addKeywordInputField.addEventListener('click', () => {
     console.log('Adding Keyword Field');
@@ -26,3 +26,25 @@ addKeywordInputField.addEventListener('click', () => {
         layout.remove();
     });
 });
+
+
+findButton.addEventListener('click', findResource);
+
+async function findResource() {
+    console.log('finding...')
+    const keywords = document.getElementsByClassName('search-box-input-field');
+    
+    const keywordLibrary = await loadJSON();
+    
+    const searchTerms = Array.from(keywords).map(word => word.value.trim().toLowerCase()).filter(word => word !== "");
+    if(searchTerms.length === 0) return;
+    
+    const pageResultsFromKeywords = searchTerms.map(word => keywordLibrary[word] || [])
+    
+}
+
+async function loadJSON() {
+  const response = await fetch('/community-resource/keywords/keyword-table.json');
+  const data = await response.json();
+  return data;
+}
