@@ -2,19 +2,22 @@
     {
         "id": "kelly-center-69901D70",
         "title": "Kelly Center for Hunger Relief Food Pantry",
-        "url": "/community-resource/kelly-center-69901D70.html",
-        "short-summary": "Kelly’s Food Pantry is the central El Paso food distribution center for the El Pasoans Fighting Hunger Food Bank. We’re proud to receive the majority of our food pantry’s resources each day from the food bank, and are extremely grateful for their partnership in fighting hunger in our community."
+        "shortSummary": "Kelly’s Food Pantry is the central El Paso food distribution center for the El Pasoans Fighting Hunger Food Bank. We’re proud to receive the majority of our food pantry’s resources each day from the food bank, and are extremely grateful for their partnership in fighting hunger in our community.",
+        "logo": "/community-resource/submission-resources/kelly-center-69901D70/kelly-center-logo.jpg",
+        "url": "/community-resource/kelly-center-69901D70.html"
     },
     {
         "id": "amistad-elder-transport-699020F4",
         "title": "Amistad Elder Transport",
-        "url": "/community-resource/amistad-elder-transport-699020F4.html",
-        "short-summary": "Amistad provides transportation services to elderly and persons with disabilities to doctor’s appointments, cancer treatment centers, therapy, dialysis, pharmacies, employment, education centers, groceries stores, shopping centers and other approved destinations."
+        "shortSummary": "Amistad provides transportation services to elderly and persons with disabilities to doctor’s appointments, cancer treatment centers, therapy, dialysis, pharmacies, employment, education centers, groceries stores, shopping centers and other approved destinations.",
+        "logo": "/community-resource/submission-resources/amistad-elder-transport-699020F4/amistad-elder-transport-logo.png",
+        "url": "/community-resource/amistad-elder-transport-699020F4.html"
     },
     {
         "id": "project-vida-clinics-69901FC8",
         "title": "Project Vida Clinics",
-        "url": "/community-resource/project-vida-clinics-69901FC8.html",
-        "short-summary": "Project Vida Health Center clinics support the health and well-being of patients in all stages of life, for all ages. We offer a full range of primary health care services at multiple locations throughout El Paso and Hudspeth Counties."
+        "shortSummary": "Project Vida Health Center clinics support the health and well-being of patients in all stages of life, for all ages. We offer a full range of primary health care services at multiple locations throughout El Paso and Hudspeth Counties.",
+        "logo": "/community-resource/submission-resources/project-vida-clinics-69901FC8/project-vida-clinic-logo.png",
+        "url": "/community-resource/project-vida-clinics-69901FC8.html"
     }
 ]
