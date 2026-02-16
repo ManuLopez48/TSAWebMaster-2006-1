@@ -119,7 +119,7 @@ function removePreviousResults() {
     const size = previousSearchResults.length;
     if(size === 0) return;
 
-    for(let i = size; i > 0; i--) {
-        previousSearchResults[i].remove();
+    for(let i = 0; i < size; i++) {
+        previousSearchResults[previousSearchResults.length - 1].remove();
     }
 }

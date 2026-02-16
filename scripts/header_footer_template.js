@@ -79,9 +79,9 @@ class CommonFooter extends HTMLElement {
         footerSubmit.textContent = 'Request Addition';
         footerSubmit.href = '/subpage/submit.html';
 
-        footerReport.className = 'footer-link';
-        footerReport.textContent = 'Report Listing';
-        footerReport.href = '/subpage/report.html';
+        // footerReport.className = 'footer-link';
+        // footerReport.textContent = 'Report Listing';
+        // footerReport.href = '/subpage/report.html';
         
         commonFooter.append(footerAbout, footerContact, footerSubmit, footerReport);
 
