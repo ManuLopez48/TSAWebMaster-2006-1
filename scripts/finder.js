@@ -72,7 +72,7 @@ async function findResource() {
     console.log("Page Data:");
     console.log(pagesDataFound);
     for(let i = 0; i < pagesDataFound.length; i++) {
-        buildResultCard(pagesDataFound[i].logo, pagesDataFound[i].title, pagesDataFound[i].shortSummary)
+        buildResultCard(pagesDataFound[i].logo, pagesDataFound[i].title, pagesDataFound[i].shortSummary, pagesDataFound[i].url)
     }
 }
 
@@ -88,7 +88,7 @@ async function loadPageJSON() {
     return data;
 }
 
-function buildResultCard(url, name, summary) {
+function buildResultCard(logo, name, summary, url) {
     const searchResult = document.createElement('article');
     const searchImg = document.createElement('img');
     const searchInfo = document.createElement('summary');
@@ -101,13 +101,17 @@ function buildResultCard(url, name, summary) {
     searchTitle.className = "search-result-title";
     searchSummary.className = "short-summary";
 
-    searchImg.src = url;
+    searchImg.src = logo;
     searchTitle.textContent = name;
     searchSummary.textContent = summary;
     searchInfo.append(searchTitle, searchSummary);
     searchResult.append(searchImg, searchInfo);
 
     resultsHolder.insertAdjacentElement('beforeend', searchResult);
+
+    searchResult.addEventListener('click', () => {
+        window.location.href = url;
+    });
 }
 
 function removePreviousResults() {
@@ -115,7 +119,7 @@ function removePreviousResults() {
     const size = previousSearchResults.length;
     if(size === 0) return;
 
-    for(let i = 0; i < size; i++) {
+    for(let i = size; i > 0; i--) {
         previousSearchResults[i].remove();
     }
 }
