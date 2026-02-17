@@ -601,3 +601,8 @@ input[type="file"] {
     justify-content: center;
     padding: 20px;
 }
+.no-results {
+    text-align: center;
+    color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
