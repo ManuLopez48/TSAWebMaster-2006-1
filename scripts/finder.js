@@ -8,6 +8,11 @@ const transportSection = document.getElementById('transport-section');
 const foodSection = document.getElementById('food-section');
 const eventsSection = document.getElementById('events-section');
 
+const pathParts = window.location.pathname.split("/");
+const repoName = pathParts[1];
+
+const basePath = window.location.hostname.includes("github.io") ? `/${repoName}/`: "/";
+
 // Sections
 healthSection.addEventListener('click', () => {
     window.location.href = healthSection.dataset.url;
@@ -122,7 +127,7 @@ function buildResultCard(logo, name, summary, url) {
     searchTitle.className = "search-result-title";
     searchSummary.className = "short-summary";
 
-    searchImg.src = logo;
+    searchImg.src = basePath + logo;
     searchTitle.textContent = name;
     searchSummary.textContent = summary;
     searchInfo.append(searchTitle, searchSummary);
@@ -131,7 +136,7 @@ function buildResultCard(logo, name, summary, url) {
     resultsHolder.insertAdjacentElement('beforeend', searchResult);
 
     searchResult.addEventListener('click', () => {
-        window.location.href = url;
+        window.location.href = basePath + url;
     });
 }
 

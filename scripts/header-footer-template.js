@@ -34,9 +34,9 @@ class CommonHeader extends HTMLElement {
         commonTopNavLinkSubmit.href = basePath+ 'subpage/submit.html';
         commonTopNavLinkSubmit.textContent = 'Request';
 
-        commonTopNavLinkAbout.className = 'common-top-nav-link';
-        commonTopNavLinkAbout.href = basePath + 'subpage/about.html';
-        commonTopNavLinkAbout.textContent = 'About';
+        // commonTopNavLinkAbout.className = 'common-top-nav-link';
+        // monTopNavLinkAbout.href = basePath + 'subpage/about.html';
+        // monTopNavLinkAbout.textContent = 'About';
 
 
         // Nest Logo on Holder
@@ -72,9 +72,9 @@ class CommonFooter extends HTMLElement {
 
         commonFooter.className = 'main-footer';
 
-        footerAbout.className = 'footer-link';
-        footerAbout.textContent = 'About';
-        footerAbout.href = basePath + 'subpage/about.html';
+        // footerAbout.className = 'footer-link';
+        // footerAbout.textContent = 'About';
+        // footerAbout.href = basePath + 'subpage/about.html';
 
         footerContact.className = 'footer-link';
         footerContact.textContent = 'Contact';
