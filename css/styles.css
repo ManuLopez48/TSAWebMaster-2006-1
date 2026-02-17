@@ -47,7 +47,7 @@ body {
     width: 100%;
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),rgb(0, 0, 0, 0.5)),
-        url("/images/website/ElPasoView1920x823.jpg");
+        url("../images/website/ElPasoView1920x823.jpg");
     background-size: cover;
 }
 .top-bar-nav {
@@ -165,7 +165,7 @@ body {
 .card-image {
     height: 50%;
     width: 100%;
-    background-image: url("/images/website/franklin_mountain_loading_icon.jpg");
+    background-image: url("../images/website/franklin_mountain_loading_icon.jpg");
     background-size: cover;
 }
 
