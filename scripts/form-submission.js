@@ -55,7 +55,7 @@ submitButton.addEventListener('click', () => {
     } else {
         if(confirm("Are you sure you want to submit?")) {
             alert("Entry Submitted");
-            window.location.href = "/subpage/submit.html";
+            window.location.href = "./subpage/submit.html";
         }
     }
 });
