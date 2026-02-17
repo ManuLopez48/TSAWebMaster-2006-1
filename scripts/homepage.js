@@ -1,7 +1,7 @@
 const homepageSearchButton = document.getElementById('search-button');
 
 homepageSearchButton.addEventListener('click', () => {
-    window.location.href = "../subpage/search.html"
+    window.location.href = "./subpage/search.html"
 });
 
 const cardButton = document.getElementsByClassName('card-button');
