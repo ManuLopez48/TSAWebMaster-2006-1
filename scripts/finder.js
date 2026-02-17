@@ -98,13 +98,13 @@ async function findResource() {
 }
 
 async function loadKeywordJSON() {
-  const response = await fetch('/community-resource/keywords/keyword-table.json');
+  const response = await fetch('./community-resource/keywords/keyword-table.json');
   const data = await response.json();
   return data;
 }
 
 async function loadPageJSON() {
-    const response = await fetch('/community-resource/page-data/pages.json')
+    const response = await fetch('./community-resource/page-data/pages.json')
     const data = await response.json();
     return data;
 }

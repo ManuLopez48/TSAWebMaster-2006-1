@@ -15,22 +15,22 @@ class CommonHeader extends HTMLElement {
 
         commonHeaderLogoHolder.className = 'common-header-logo-holder';
         commonHeaderLogo.className = 'common-header-logo';
-        commonHeaderLogo.src = '/images/website/icons/ElPasoCommunityProjectIconBlack.png';
+        commonHeaderLogo.src = './images/website/icons/ElPasoCommunityProjectIconBlack.png';
 
         commonTopNavLinkHome.className = 'common-top-nav-link';
-        commonTopNavLinkHome.href = '/index.html';
+        commonTopNavLinkHome.href = './index.html';
         commonTopNavLinkHome.textContent = 'Home';
 
         commonTopNavLinkSearch.className = 'common-top-nav-link';
-        commonTopNavLinkSearch.href = '/subpage/search.html';
+        commonTopNavLinkSearch.href = './subpage/search.html';
         commonTopNavLinkSearch.textContent = 'Find';
 
         commonTopNavLinkSubmit.className = 'common-top-nav-link';
-        commonTopNavLinkSubmit.href = '/subpage/submit.html';
+        commonTopNavLinkSubmit.href = './subpage/submit.html';
         commonTopNavLinkSubmit.textContent = 'Request';
 
         commonTopNavLinkAbout.className = 'common-top-nav-link';
-        commonTopNavLinkAbout.href = '/subpage/about.html';
+        commonTopNavLinkAbout.href = './subpage/about.html';
         commonTopNavLinkAbout.textContent = 'About';
 
 
@@ -53,7 +53,7 @@ class CommonHeader extends HTMLElement {
 }
 
 function returnHome() {
-        window.location.href = '/index.html';
+        window.location.href = './index.html';
 }
 
 class CommonFooter extends HTMLElement {
@@ -69,19 +69,19 @@ class CommonFooter extends HTMLElement {
 
         footerAbout.className = 'footer-link';
         footerAbout.textContent = 'About';
-        footerAbout.href = '/subpage/about.html';
+        footerAbout.href = './subpage/about.html';
 
         footerContact.className = 'footer-link';
         footerContact.textContent = 'Contact';
-        footerContact.href = '/subpage/contact.html';
+        footerContact.href = './subpage/contact.html';
 
         footerSubmit.className = 'footer-link';
         footerSubmit.textContent = 'Request Addition';
-        footerSubmit.href = '/subpage/submit.html';
+        footerSubmit.href = './subpage/submit.html';
 
         // footerReport.className = 'footer-link';
         // footerReport.textContent = 'Report Listing';
-        // footerReport.href = '/subpage/report.html';
+        // footerReport.href = './subpage/report.html';
         
         commonFooter.append(footerAbout, footerContact, footerSubmit, footerReport);
 
