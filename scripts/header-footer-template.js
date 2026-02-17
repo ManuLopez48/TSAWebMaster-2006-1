@@ -1,3 +1,8 @@
+const pathParts = window.location.pathname.split("/");
+const repoName = pathParts[1];
+
+const basePath = window.location.hostname.includes("github.io") ? `/${repoName}/`: "/";
+
 class CommonHeader extends HTMLElement {
     connectedCallback() {
         const commonHeader = document.createElement('header');
@@ -15,22 +20,22 @@ class CommonHeader extends HTMLElement {
 
         commonHeaderLogoHolder.className = 'common-header-logo-holder';
         commonHeaderLogo.className = 'common-header-logo';
-        commonHeaderLogo.src = './images/website/icons/ElPasoCommunityProjectIconBlack.png';
+        commonHeaderLogo.src = basePath + 'images/website/icons/ElPasoCommunityProjectIconBlack.png';
 
         commonTopNavLinkHome.className = 'common-top-nav-link';
-        commonTopNavLinkHome.href = './index.html';
+        commonTopNavLinkHome.href = basePath +'index.html';
         commonTopNavLinkHome.textContent = 'Home';
 
         commonTopNavLinkSearch.className = 'common-top-nav-link';
-        commonTopNavLinkSearch.href = './subpage/search.html';
+        commonTopNavLinkSearch.href = basePath + 'subpage/search.html';
         commonTopNavLinkSearch.textContent = 'Find';
 
         commonTopNavLinkSubmit.className = 'common-top-nav-link';
-        commonTopNavLinkSubmit.href = './subpage/submit.html';
+        commonTopNavLinkSubmit.href = basePath+ 'subpage/submit.html';
         commonTopNavLinkSubmit.textContent = 'Request';
 
         commonTopNavLinkAbout.className = 'common-top-nav-link';
-        commonTopNavLinkAbout.href = './subpage/about.html';
+        commonTopNavLinkAbout.href = basePath + 'subpage/about.html';
         commonTopNavLinkAbout.textContent = 'About';
 
 
@@ -53,7 +58,7 @@ class CommonHeader extends HTMLElement {
 }
 
 function returnHome() {
-        window.location.href = './index.html';
+        window.location.href = basePath + 'index.html';
 }
 
 class CommonFooter extends HTMLElement {
@@ -69,19 +74,19 @@ class CommonFooter extends HTMLElement {
 
         footerAbout.className = 'footer-link';
         footerAbout.textContent = 'About';
-        footerAbout.href = './subpage/about.html';
+        footerAbout.href = basePath + 'subpage/about.html';
 
         footerContact.className = 'footer-link';
         footerContact.textContent = 'Contact';
-        footerContact.href = './subpage/contact.html';
+        footerContact.href = basePath + 'subpage/contact.html';
 
         footerSubmit.className = 'footer-link';
         footerSubmit.textContent = 'Request Addition';
-        footerSubmit.href = './subpage/submit.html';
+        footerSubmit.href = basePath + 'subpage/submit.html';
 
         // footerReport.className = 'footer-link';
         // footerReport.textContent = 'Report Listing';
-        // footerReport.href = './subpage/report.html';
+        // footerReport.href = basePath + 'subpage/report.html';
         
         commonFooter.append(footerAbout, footerContact, footerSubmit, footerReport);
 
