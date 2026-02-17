@@ -336,6 +336,27 @@ body {
     text-overflow: ellipsis;
 }
 
+.page-search-sections {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
+.page-search-section {
+    display: flex;
+    align-items: center;
+    margin: 1em 0 0 0;
+    padding: 0 0 0 1em;
+    border-radius: 6px;
+    height: 50px;
+    box-shadow: 
+        0px 4px 8px 0px rgba(0, 0, 0, 0.3), 
+        0px 6px 20px 0px rgba(0, 0, 0, 0.2);
+    background-color: #bdd0c4;
+    cursor: pointer;
+
+}
+
 /*Form Submission for submit.html*/
 .form-behaviour-info {
     margin: 0;

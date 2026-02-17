@@ -3,6 +3,27 @@ const searchBoxInputFields = document.getElementsByClassName('search-box-input-f
 const findButton = document.getElementById('search-box-btn');
 const resultsHolder = document.getElementById('search-results');
 
+const healthSection = document.getElementById('health-section');
+const transportSection = document.getElementById('transport-section');
+const foodSection = document.getElementById('food-section');
+const eventsSection = document.getElementById('events-section');
+
+// Sections
+healthSection.addEventListener('click', () => {
+    window.location.href = healthSection.dataset.url;
+});
+transportSection.addEventListener('click', () => {
+    window.location.href = transportSection.dataset.url;
+});
+foodSection.addEventListener('click', () => {
+    window.location.href = foodSection.dataset.url;
+});
+eventsSection.addEventListener('click', () => {
+    window.location.href = eventsSection.dataset.url;
+});
+
+
+// Keyword Input Field Functions
 addKeywordInputField.addEventListener('click', () => {
     // console.log('Adding Keyword Field');
     const layout = document.createElement('div');
