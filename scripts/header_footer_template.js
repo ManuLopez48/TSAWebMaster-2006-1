@@ -18,7 +18,7 @@ class CommonHeader extends HTMLElement {
         commonHeaderLogo.src = '/images/website/icons/ElPasoCommunityProjectIconBlack.png';
 
         commonTopNavLinkHome.className = 'common-top-nav-link';
-        commonTopNavLinkHome.href = '/homepage.html';
+        commonTopNavLinkHome.href = '/index.html';
         commonTopNavLinkHome.textContent = 'Home';
 
         commonTopNavLinkSearch.className = 'common-top-nav-link';
@@ -53,7 +53,7 @@ class CommonHeader extends HTMLElement {
 }
 
 function returnHome() {
-        window.location.href = '/homepage.html';
+        window.location.href = '/index.html';
 }
 
 class CommonFooter extends HTMLElement {
