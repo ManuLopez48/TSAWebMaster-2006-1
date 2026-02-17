@@ -593,3 +593,11 @@ input[type="file"] {
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*Sub Sections*/
+.section-listings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
