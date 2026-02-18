@@ -7,6 +7,7 @@ const healthSection = document.getElementById('health-section');
 const transportSection = document.getElementById('transport-section');
 const foodSection = document.getElementById('food-section');
 const eventsSection = document.getElementById('events-section');
+const donationsSection = document.getElementById('donations-section'):
 
 // Sections
 healthSection.addEventListener('click', () => {
@@ -21,6 +22,8 @@ foodSection.addEventListener('click', () => {
 eventsSection.addEventListener('click', () => {
     window.location.href = eventsSection.dataset.url;
 });
+donationsSection.addEventListener('click', () => {
+    window.location.href = donationsSection.dataset.url;
 
 
 // Keyword Input Field Functions
