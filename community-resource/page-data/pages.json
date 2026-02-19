@@ -22,9 +22,18 @@
     },
     {
         "id": "family-service-of-el-paso-699403E0",
-        "title": "Family Service of El Paso",
+        "title": "Family Service of El Paso", 
         "shortSummary": "The mission of Family Service of El Paso is to deliver mental health services that improve the life, health, and wellbeing of individuals and families in the El Paso community. As the largest mental health service agency in El Paso, we uniquely suited to serve local clients from nearly every demographic.",
         "logo": "community-resource/submission-resources/family-service-of-el-paso-699403E0/family-service-of-el-paso-logo.png",
         "url": "community-resource/family-service-of-el-paso-699403E0.html" 
+    },
+    {
+        "id": "gigols-talercis-plasma-resources-699304E1",
+        "title": "Gifols Talecris Plasma Resources",
+        "shortSummary": "Grifols plasma specializes in the collection of protein-rich plasma from donors to help create life-saving therapies for patients with diseases, such as immune deficiencies, hemophilia, genetic emphysema, hepatitis, tetanus and rabies.",
+        "logo": "grifols-talecris-plasma-donation-center-289572722.png",
+        "url": ""
+        
+
     }
 ]
