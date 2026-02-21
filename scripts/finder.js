@@ -7,6 +7,7 @@ const healthSection = document.getElementById('health-section');
 const transportSection = document.getElementById('transport-section');
 const foodSection = document.getElementById('food-section');
 const eventsSection = document.getElementById('events-section');
+const donationsSection = document.getElementById('donations-section')";
 
 const pathParts = window.location.pathname.split("/");
 const repoName = pathParts[1];
@@ -25,6 +26,9 @@ foodSection.addEventListener('click', () => {
 });
 eventsSection.addEventListener('click', () => {
     window.location.href = eventsSection.dataset.url;
+});
+donationsSection.addEventListener('click', () => {
+    window.locaion.href = donationsSection.dataset.url;
 });
 
 
